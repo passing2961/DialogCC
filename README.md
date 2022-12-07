@@ -1,3 +1,3 @@
 # DialogCC
 
-The code and dataset will be released later.
+The code will be released later.

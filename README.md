@@ -10,10 +10,34 @@ Furthermore, we leverage CLIP similarity to maintain consistency between aligned
 Through this pipeline, we introduce DialogCC, a high-quality and diverse multi-modal dialogue dataset that surpasses existing datasets in terms of quality and diversity in human evaluation.
 Our comprehensive experiments highlight that when multi-modal dialogue models are trained using our dataset, their generalization performance on unseen dialogue datasets is significantly enhanced. We will release the source code and dataset following publication.
 
-## Pipeline
+## How to run Pipeline?
 
-## Dataset
+Currently, this repository only supports generating appropriate image-sharing moments using GPT-4. We will release the complete code of our proposed pipeline: (1) Collecting, (2) Aligning, and (3) Filtering.
 
-## To-Do List
+```
+python run.py \
+  --run-id test \
+  --model gpt-4 \
+  --temperature 0.0 \
+  --top-p 1.0 \
+  --max-tokens 1024 \
+  --frequency-penalty 0.0 \
+  --presence-penalty 0.0
+```
+
+## DialogCC
+
+You can now load DialogCC from the [HuggingFace hub](https://huggingface.co/datasets/passing2961/dialogcc) as the following:
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("passing2961/dialogcc")
+```
+
+> 🚨 Disclaimer: Despite our efforts to create a high-quality and diverse multi-modal dialogue dataset, it still contains harmful content, such as social bias. Moreover, since DialogCC incorporates dialogues from the DailyDialog dataset, which is licensed under CC BY-NC-SA 4.0, DialogCC is shared under the license CC-BY-NC-SA 4.0. Therefore, we strongly recommend using our dataset for academic and research purposes.
 
 ## Citation
+
+```
+TBD
+```

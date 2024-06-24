@@ -39,5 +39,11 @@ dataset = load_dataset("passing2961/dialogcc")
 ## Citation
 
 ```
-TBD
+@inproceedings{lee2024dialogcc,
+  title={DialogCC: An Automated Pipeline for Creating High-Quality Multi-Modal Dialogue Dataset},
+  author={Lee, Young-Jun and Ko, Byungsoo and Kim, Han-Gyu and Hyeon, Jonghwan and Choi, Ho-Jin},
+  booktitle={Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  pages={1938--1963},
+  year={2024}
+}
 ```
